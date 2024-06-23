@@ -1,6 +1,13 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: grid;
-    margin: 0;
 }
 
 nav {
@@ -11,15 +18,34 @@ header {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    background-color: navy;
+    padding: 15px;
+}
+
+.title {
+    color: white;
 }
 
 .list_nav {
     display: flex;
     justify-content: end;
     align-content: center;
-    gap: 40px;
-    padding-right: 10px;
+    gap: 50px;
+    margin-right: 15px;
+    padding-right: 15px;
     list-style-type: none;
+    color: white;
+}
+
+ul li a:link, a:visited, a:active {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+	color: #f00;
 }
 
 main {
@@ -28,18 +54,44 @@ main {
 
 .b1 {
     height: 100vh;
-    background-color: aqua;
+    background-color: rgb(224, 224, 224);
 }
 
 .b2 {
     height: 100vh;
-    background-color: bisque;
+    background-color: rgb(244, 244, 244);
+}
+
+.b3 {
+    height: 100vh;
+    background-color: rgb(185, 0, 0);
+}
+
+.title-b1 {
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+.title-b2 {
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+.title-b3 {
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 30px;
+    color: white;
 }
 
 footer {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
-    margin-left: 5px;
+    background-color: navy;
+    height: 30px;
+    padding-left: 15px;
+    color: white;
 }
