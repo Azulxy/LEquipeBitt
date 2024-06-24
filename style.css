@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 html {
@@ -20,6 +21,8 @@ header {
     align-items: center;
     background-color: navy;
     padding: 15px;
+    position: sticky;
+    top: 0;
 }
 
 .title {
