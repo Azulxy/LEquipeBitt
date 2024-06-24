@@ -7,43 +7,43 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    display: grid;
-}
-
-nav {
-    margin: 10px;
-}
-
 header {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: navy;
-    padding: 15px;
     position: sticky;
     top: 0;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 30px;
+    padding: 15px;
+
+    background-color: navy;
+}
+
 .title {
+    height: 30px;
+
     color: white;
 }
 
 .list_nav {
     display: flex;
-    justify-content: end;
-    align-content: center;
+    align-items: center;
+
+    height: 30px;
     gap: 50px;
-    margin-right: 15px;
-    padding-right: 15px;
+    
     list-style-type: none;
     color: white;
 }
 
 ul li a:link, a:visited, a:active {
     text-decoration: none;
-    color: white;
     font-size: larger;
+    color: white;
 }
 
 ul li a:hover {
@@ -73,28 +73,29 @@ main {
 .title-b1 {
     padding-top: 10px;
     padding-left: 15px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .title-b2 {
     padding-top: 10px;
     padding-left: 15px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .title-b3 {
     padding-top: 10px;
     padding-left: 15px;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 
 footer {
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
-    background-color: navy;
+    
     height: 30px;
     padding-left: 15px;
+
+    background-color: navy;
     color: white;
 }
