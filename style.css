@@ -45,11 +45,11 @@ ul li a:link, a:visited, a:active {
 }
 
 ul li a:hover {
-    text-decoration: none;
-	color: #724CF9;
+    text-decoration: underline;
+    color: #724CF9;
 }
 
-body{
+body {
     padding-top: 60px;
 }
 
@@ -64,7 +64,7 @@ main {
 
 .b2 {
     height: 100vh;
-    background-color: #3508d771; 
+    background-color: #3508d771;
 }
 
 .b3 {
@@ -72,7 +72,7 @@ main {
     background-color: #3508d767;
 }
 
-.title-b1, .title-b2, .title-b3{
+.title-b1, .title-b2, .title-b3 {
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -81,60 +81,69 @@ main {
     color: #2D2D34;
 }
 
-.menu-button{
+.menu-button {
     display: none;
 }
 
-@media(min-width: 801px) {
-    .sidebar{
+@media (min-width: 801px) {
+    .sidebar {
         display: none;
     }
 }
-@media(max-width: 800px){
-    .hideOnMobile{
+
+@media (max-width: 800px) {
+    .hideOnMobile {
         display: none;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
     }
-    .sidebar{
+
+    .sidebar {
         display: none;
         position: fixed;
         top: 0;
-        flex: 1 1 100vh;
         right: 0;
-        height: 100vh;
+        height: 100%;
         width: 250px;
-        z-index: 1050;
         background-color: #2D2D34;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        /* transition: transform 0.3s ease;
-        transform: translateX(100%); */
+        padding-top: 60px;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
     }
-    .sidebar li{
+
+    .sidebar.active {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .sidebar li {
         width: 100%;
+        padding: 15px;
+        list-style-type: none;
         text-align: center;
     }
-    .sidebar a{
+
+    .sidebar a {
         width: 100%;
         font-size: larger;
         color: #CAD8DE;
         text-decoration: none;
     }
 
-    .sidebar a:hover{
-        color: #724CF9
+    .sidebar a:hover {
+        color: #724CF9;
     }
 
-    .close-button{
+    .close-button {
         position: absolute;
         top: 15px;
         right: 15px;
         font-size: 20px;
         color: #CAD8DE;
-        cursor: pointer
+        cursor: pointer;
     }
 }
 
@@ -142,10 +151,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     height: 30px;
     padding-left: 15px;
-
     background-color: #2D2D34;
     color: #CAD8DE;
 }
