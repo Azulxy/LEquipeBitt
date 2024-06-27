@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,22 @@
             <h1 class="title">L'Équipe Bitt</h1>
             
             <ul class="list_nav">
+                <li class="hideOnMobile"><a href="#About" >About Us</a></li>
+                <li class="hideOnMobile"><a href="#Services">Services</a></li>
+                <li class="hideOnMobile"><a href="#Contacts" >Contacts</a></li>
+
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></a></li>
+            </ul>
+            <ul class="sidebar">
                 <li><a href="#About">About Us</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#Contacts">Contacts</a></li>
-            </ul>
+               
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></a></li> 
+        </div>
         </nav>
+
+
     </header>
 
     <main>
@@ -37,6 +48,8 @@
     <footer>
         <p>&copy; 2024 L'Équipe Bitt. Todos os direitos reservados.</p>
     </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

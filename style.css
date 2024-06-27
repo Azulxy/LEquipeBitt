@@ -19,16 +19,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     height: 30px;
     padding: 15px;
-
     background-color: #2D2D34;
 }
 
 .title {
     height: 30px;
-
     color: #CAD8DE;
 }
 
@@ -37,7 +34,6 @@ nav {
     align-items: center;
     height: 30px;
     gap: 50px;
-    
     list-style-type: none;
     color: #CAD8DE;
 }
@@ -49,7 +45,7 @@ ul li a:link, a:visited, a:active {
 }
 
 ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 	color: #724CF9;
 }
 
@@ -76,7 +72,7 @@ main {
     background-color: #3508d767;
 }
 
-.title-b1 {
+.title-b1, .title-b2, .title-b3{
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -85,22 +81,61 @@ main {
     color: #2D2D34;
 }
 
-.title-b2 {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-left: 15px;
-    font-size: 25px;
-    color: #2D2D34;
+.menu-button{
+    display: none;
 }
 
-.title-b3 {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-left: 15px;
-    font-size: 25px;
-    color: #2D2D34;
+@media(min-width: 801px) {
+    .sidebar{
+        display: none;
+    }
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+        position: fixed;
+        top: 0;
+        flex: 1 1 100vh;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 1050;
+        background-color: #2D2D34;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        /* transition: transform 0.3s ease;
+        transform: translateX(100%); */
+    }
+    .sidebar li{
+        width: 100%;
+        text-align: center;
+    }
+    .sidebar a{
+        width: 100%;
+        font-size: larger;
+        color: #CAD8DE;
+        text-decoration: none;
+    }
+
+    .sidebar a:hover{
+        color: #724CF9
+    }
+
+    .close-button{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        color: #CAD8DE;
+        cursor: pointer
+    }
 }
 
 footer {
