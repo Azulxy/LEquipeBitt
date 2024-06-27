@@ -23,13 +23,13 @@ nav {
     height: 30px;
     padding: 15px;
 
-    background-color: rgb(0, 0, 128);
+    background-color: #2D2D34;
 }
 
 .title {
     height: 30px;
 
-    color: white;
+    color: #CAD8DE;
 }
 
 .list_nav {
@@ -39,18 +39,18 @@ nav {
     gap: 50px;
     
     list-style-type: none;
-    color: white;
+    color: #CAD8DE;
 }
 
 ul li a:link, a:visited, a:active {
     text-decoration: none;
     font-size: larger;
-    color: white;
+    color: #CAD8DE;
 }
 
 ul li a:hover {
     text-decoration: underline;
-	color: #f00;
+	color: #724CF9;
 }
 
 body{
@@ -63,45 +63,54 @@ main {
 
 .b1 {
     height: 100vh;
-    background-color: rgb(224, 224, 224);
+    background-color: #714cf986;
 }
 
 .b2 {
     height: 100vh;
-    background-color: rgb(244, 244, 244);
+    background-color: #3508d771; 
 }
 
 .b3 {
     height: 100vh;
-    background-color: rgb(185, 0, 0);
+    background-color: #3508d767;
 }
 
 .title-b1 {
+    display: flex;
+    justify-content: center;
     padding-top: 10px;
     padding-left: 15px;
     font-size: 25px;
+    color: #2D2D34;
 }
 
 .title-b2 {
+    display: flex;
+    justify-content: center;
     padding-top: 10px;
     padding-left: 15px;
     font-size: 25px;
+    color: #2D2D34;
 }
 
 .title-b3 {
+    display: flex;
+    justify-content: center;
     padding-top: 10px;
     padding-left: 15px;
     font-size: 25px;
-    color: white;
+    color: #2D2D34;
 }
 
 footer {
     display: flex;
+    justify-content: center;
     align-items: center;
     
     height: 30px;
     padding-left: 15px;
 
-    background-color: navy;
-    color: white;
+    background-color: #2D2D34;
+    color: #CAD8DE;
 }
